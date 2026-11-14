@@ -26,7 +26,7 @@ WITH staging AS (
         , region_type
         , state_name
         , CAST(date AS DATE) AS month_end_date
-        , CAST(value AS DOUBLE) AS downpayment_value
+        , CAST(value AS DOUBLE) AS annual_income_needed_value
     FROM
         flattened
 )

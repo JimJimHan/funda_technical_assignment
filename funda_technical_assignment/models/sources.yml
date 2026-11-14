@@ -1,6 +1,7 @@
 version: 2
 sources:
   - name: assignment
+    schema: main
     tables:
       - name: city_zori_uc_sfrcondomfr_sm_month
         columns:
