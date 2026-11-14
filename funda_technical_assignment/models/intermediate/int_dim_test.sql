@@ -3,10 +3,10 @@ with base as (
   ),
   sample as (
       select 
-          SizeRank
-        , RegionName
+          size_rank
+        , region_name
       from base
-      where SizeRank = 0
+      where size_rank = 0
   )
   select * from sample
     
