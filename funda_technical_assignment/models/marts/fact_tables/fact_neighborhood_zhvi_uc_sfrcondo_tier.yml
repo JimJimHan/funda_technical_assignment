@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: fact_neighborhood_zhvi_uc_sfrcondo_tier
+    description: Monthly neighborhood Zillow Home Value Index for the source home types and tier.
+    columns:
+      - name: region_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_location')
+                field: region_id
+      - name: month_end_date
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: month_end_date

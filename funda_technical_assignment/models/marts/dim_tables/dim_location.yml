@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_location
+    description: One row per Zillow geographic region.
+    columns:
+      - name: region_id
+        description: Natural key for the location dimension.
+        tests:
+          - not_null
+          - unique

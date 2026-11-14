@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: fact_metro_sales_count_now_uc_sfrcondo_month
+    description: Monthly metro sales count nowcast for single-family residences and condos.
+    columns:
+      - name: region_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_location')
+                field: region_id
+      - name: month_end_date
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: month_end_date

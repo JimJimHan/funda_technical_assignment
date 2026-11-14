@@ -26,7 +26,7 @@ WITH staging AS (
         , region_type
         , state_name
         , CAST(date AS DATE) AS month_end_date
-        , CAST(value AS DOUBLE) AS value
+        , CAST(value AS DOUBLE) AS mean_doz_pending
     FROM
         flattened
 )

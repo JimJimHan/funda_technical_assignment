@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fact_city_zori_uc_sfrcondomfr_sm_month
+    description: City-level Zillow Observed Rent Index by month.
+    columns:
+      - name: region_id
+        description: Natural key to the location dimension.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_location')
+                field: region_id
+      - name: month_end_date
+        description: Natural key to the date dimension.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: month_end_date

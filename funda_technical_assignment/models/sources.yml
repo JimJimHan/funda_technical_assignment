@@ -3,11 +3,146 @@ sources:
   - name: assignment
     tables:
       - name: city_zori_uc_sfrcondomfr_sm_month
+        columns:
+          - name: RegionID
+            data_tests:
+              - not_null
+              - unique
+          - name: SizeRank
+            data_tests:
+              - not_null
+          - name: RegionName
+            data_tests:
+              - not_null
+          - name: RegionType
+            data_tests:
+              - not_null
+          - name: StateName
+            data_tests:
+              - not_null
       - name: metro_invt_fs_uc_sfrcondo_sm_month
+        columns:
+          - name: RegionID
+            data_tests:
+              - not_null
+              - unique
+          - name: SizeRank
+            data_tests:
+              - not_null
+          - name: RegionName
+            data_tests:
+              - not_null
+          - name: RegionType
+            data_tests:
+              - not_null
       - name: metro_market_temp_index_uc_sfrcondo_month
+        columns:
+          - name: RegionID
+            data_tests:
+              - not_null
+              - unique
+          - name: SizeRank
+            data_tests:
+              - not_null
+          - name: RegionName
+            data_tests:
+              - not_null
+          - name: RegionType
+            data_tests:
+              - not_null
       - name: metro_mean_doz_pending_uc_sfrcondo_sm_month
+        columns:
+          - name: RegionID
+            data_tests:
+              - not_null
+              - unique
+          - name: SizeRank
+            data_tests:
+              - not_null
+          - name: RegionName
+            data_tests:
+              - not_null
+          - name: RegionType
+            data_tests:
+              - not_null
       - name: metro_new_con_sales_count_raw_uc_sfrcondo_month
+        columns:
+          - name: RegionID
+            data_tests:
+              - not_null
+              - unique
+          - name: SizeRank
+            data_tests:
+              - not_null
+          - name: RegionName
+            data_tests:
+              - not_null
+          - name: RegionType
+            data_tests:
+              - not_null
       - name: metro_new_homeowner_income_needed_downpayment
+        columns:
+          - name: RegionID
+            data_tests:
+              - not_null
+              - unique
+          - name: SizeRank
+            data_tests:
+              - not_null
+          - name: RegionName
+            data_tests:
+              - not_null
+          - name: RegionType
+            data_tests:
+              - not_null
       - name: metro_sales_count_now_uc_sfrcondo_month
+        columns:
+          - name: RegionID
+            data_tests:
+              - not_null
+              - unique
+          - name: SizeRank
+            data_tests:
+              - not_null
+          - name: RegionName
+            data_tests:
+              - not_null
+          - name: RegionType
+            data_tests:
+              - not_null
       - name: national_zorf_growth_uc_sfr_sm_month
+        columns:
+          - name: RegionID
+            data_tests:
+              - not_null
+              - unique
+          - name: SizeRank
+            data_tests:
+              - not_null
+          - name: RegionName
+            data_tests:
+              - not_null
+          - name: RegionType
+            data_tests:
+              - not_null
+          - name: BaseDate
+            data_tests:
+              - not_null
       - name: neighborhood_zhvi_uc_sfrcondo_tier
+        columns:
+          - name: RegionID
+            data_tests:
+              - not_null
+              - unique
+          - name: SizeRank
+            data_tests:
+              - not_null
+          - name: RegionName
+            data_tests:
+              - not_null
+          - name: RegionType
+            data_tests:
+              - not_null
+          - name: StateName
+            data_tests:
+              - not_null

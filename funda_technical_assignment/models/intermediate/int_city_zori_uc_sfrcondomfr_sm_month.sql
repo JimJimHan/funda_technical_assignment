@@ -31,7 +31,7 @@ WITH staging AS (
       , metro_name
       , county_name
       , CAST(date AS DATE) AS month_end_date
-      , CAST(value AS DOUBLE) AS value
+      , CAST(value AS DOUBLE) AS zori_value
 FROM 
     flattened
 )

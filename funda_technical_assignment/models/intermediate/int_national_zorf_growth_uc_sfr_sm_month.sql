@@ -26,7 +26,7 @@ WITH staging AS (
         , region_type
         , base_date
         , CAST(date AS DATE) AS month_end_date
-        , CAST(value AS DOUBLE) AS value
+        , CAST(value AS DOUBLE) AS zorf_growth_value
     FROM
         flattened
 )

@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: fact_metro_new_homeowner_income_needed_downpayment
+    description: Monthly metro income needed for a new homeowner under the source down-payment assumptions.
+    columns:
+      - name: region_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_location')
+                field: region_id
+      - name: month_end_date
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: month_end_date

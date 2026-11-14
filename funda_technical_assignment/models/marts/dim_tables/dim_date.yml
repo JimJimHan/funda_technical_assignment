@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_date
+    description: One row per calendar month end from January 2000 through December 2030.
+    columns:
+      - name: month_end_date
+        description: Month-end date and natural key for the dimension.
+        tests:
+          - not_null
+          - unique
