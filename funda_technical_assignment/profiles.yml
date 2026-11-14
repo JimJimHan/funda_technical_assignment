@@ -1,0 +1,7 @@
+funda_technical_assignment:
+
+  outputs:
+    dev:
+      type: duckdb
+      path: ../assignment.duckdb
+  target: dev
